@@ -1,0 +1,14 @@
+tr, td{
+    height: 25px;
+    width: 25px;
+    margin: auto;
+}
+table{
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+.text{
+    margin: auto;
+}

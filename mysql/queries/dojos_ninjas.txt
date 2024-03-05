@@ -1,0 +1,23 @@
+use dojos_and_ninjas_schema;
+INSERT INTO dojos (name, created_at,updated_at) VALUES ('HELLO', now(), now());
+INSERT INTO dojos (name, created_at,updated_at) VALUES ('HI', now(), now());
+INSERT INTO dojos (name, created_at,updated_at) VALUES ('HEY', now(), now());
+DELETE FROM dojos WHERE (dojos.id >=1 );
+INSERT INTO dojos (name, created_at,updated_at) VALUES ('HELLO', now(), now());
+INSERT INTO dojos (name, created_at,updated_at) VALUES ('HI', now(), now());
+INSERT INTO dojos (name, created_at,updated_at) VALUES ('HEY', now(), now());
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Rihem', 'Hadhri', 20, now(), now(), 4), ('Romi', 'MIMI', 3, now(), now(),4), ('Katous', 'Dcapé', 22, now(), now(),4);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Jihen', 'Hadhri', 20, now(), now(), 5), ('Elif', 'Shafak', 40, now(), now(),5), ('Saoudi', 'Cheikh', 22, now(), now(),5);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Rami', 'Hadhri', 23, now(), now(), 6), ('Kerr', 'Rach', 3, now(), now(),6), ('Hedia', 'Trki', 22, now(), now(),6);
+SELECT * FROM ninjas
+LEFT JOIN dojos ON ninjas.id = ninjas.dojo_id 
+WHERE dojos_id = 4;
+SELECT * FROM ninjas
+LEFT JOIN dojos ON ninjas.id = ninjas.dojo_id 
+WHERE dojos_id = 5;
+SELECT * FROM ninjas
+LEFT JOIN dojos ON ninjas.id = ninjas.dojo_id 
+WHERE dojos_id = 6;

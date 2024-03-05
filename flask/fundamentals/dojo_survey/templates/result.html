@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container2">
+        <h3>{{session["name"]}}</h3>
+        <p>Dojo location : {{session["location"]}}</p>
+        <p>Favourite language : {{session["language"]}}</p>
+        <p>Comment : {{session["comment"]}}</p>
+        <a href="/" class="btn">Go Back </a>
+    </div>
+</body>
+</html>

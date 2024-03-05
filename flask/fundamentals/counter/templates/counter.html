@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Counter</h3>
+        <p>{{session["count"]}}</p>
+        <div >
+            <a href="/" class="btn1"> create</a>
+            <a href="/clear" class="btn2"> Clear</a>
+            <a href="/increment"  class="btn3"> Add 2 </a>
+            <form action="/input" method="post">
+            <input type="text" name="num" id="num" >
+            <input type="submit" value="add to counter">
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+
+</body>
+</html>

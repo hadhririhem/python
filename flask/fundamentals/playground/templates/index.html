@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box{
+        border: 2px solid black;
+        margin: 50px;
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+    }
+</style>
+<body>
+    {%for i in range (0,num): %}
+    <div class="box" style= "background-color: {{colour}};" ></div>
+    {%endfor%}
+</body>
+</html>

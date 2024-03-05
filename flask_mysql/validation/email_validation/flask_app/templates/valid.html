@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="msg">
+            <h4>The email adress you entered is valid, Thank You ! </h4>
+        </div>
+        <div class="emails">
+            <table>
+                <tr>
+                    <thead>Email</thead>
+                    <thead>Created At </thead>
+                </tr>
+                {%for user in users%}
+                <tr>
+                    <td>{{user.email}} </td>
+                    <td> {{user.created_at}} </td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+table, tr, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+    margin: auto;
+    background-color: palegoldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    color: midnightblue;
+}

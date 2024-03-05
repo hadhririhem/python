@@ -1,0 +1,32 @@
+.container, .container2{
+    height: 500px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+    background-color: #33393E;
+    color: white;
+}
+.container2{
+    height: 200px;
+}
+#comment{
+    height: 110px;
+}
+h3{
+    color: #FEC008;
+    text-align: center;
+}
+#submit, a{
+    background-color:#FEC008 ;
+    color:#33393E ;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: 60px;
+}
+input, select{
+    margin: 5px;
+    padding: 5px;
+}
